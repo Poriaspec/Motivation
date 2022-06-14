@@ -1,0 +1,74 @@
+.dashboard{
+   background-color: #ffcfdf;
+   background-image: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%);
+   background-repeat: no-repeat;
+   width: 100%;
+}
+
+.welcome{
+   display: flex;
+   justify-content: center;
+   background-color: #eec0c6; 
+   background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+   margin: 0px;
+   padding: 20px;
+
+
+
+}
+.welcome li{
+    list-style: none;
+    padding-left: 50px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.buttonLi{
+  background-color: #fe7bb0;
+  background-image: linear-gradient(315deg, #fe7bb0 0%, #ff748b 74%) ;
+  border: none;
+  color: white;
+  padding: 10px;
+  margin:-5px 0px 0px 0px;
+  box-shadow: 0 1px 6px #ccc;
+  width: 100%;
+  border-radius: 10px;
+  font-size: 15px;
+
+}
+
+.welcome span{
+    font-weight: 900;
+
+}
+
+.story{
+    width: 80%;
+    display: block;
+    margin: 30px auto;
+}
+.asp{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20px
+ }
+
+ .per{
+    font-size: 30px;
+    text-align: center;
+
+ }
+
+ p{
+    font-size: 20px;
+    padding-top: 10px;
+ }
+
+ svg{
+    width: 50px;
+    height: 50px;
+ }
+
+ .other{
+    font-size: 20px;
+ }

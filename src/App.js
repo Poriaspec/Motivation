@@ -1,30 +1,19 @@
-import React, {BrowserRouter, useState, useEffect} from 'react'
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Signup from './components/Signup';
-import { Container } from 'react-bootstrap';
+import React from "react";
+import Auth from "./components/Auth";
+import Dashboard from "./components/Dashboard";
+import { useUserContext } from "./contexts/UserContext";
 
-const App=() =>{
+
+function App() {
+  const { user, loading, error } = useUserContext();
 
   return (
-
-    <Container className='d-flex align-items-center justify-content-center'
-    style={{minHeight:"100vh", maxWidth:"100%", backgroundColor: "#f8f9d2",
-    backgroundImage: "linear-gradient(315deg, #f8f9d2 0%, #e8dbfc 74%)" }} 
-    >
-      <div className='w-100' style={{maxWidth:"400px"}}>
-
-    <Router>
-      <Routes>
-      
-      <Route path='/' element={<Signup/>} />
-
-      </Routes>
-    </Router>
+    <div className="App">
+      {error && <p className="error">{error}</p>}
+      {loading ? <h2>Loading...</h2> : <> {user ? <Dashboard /> : <Auth />} </>}
+    
 
     </div>
-
-    </Container>
-
   );
 }
 

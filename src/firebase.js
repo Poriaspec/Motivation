@@ -1,14 +1,25 @@
-import firebase from "firebase/app"
-import "firebase/auth"
+import {initializeApp} from 'firebase/app';
+import {getAuth, GoogleAuthProvider, signInWithPopup} from "firebase/auth"
 
-const app = firebase.initializeApp({
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain:process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID
-})
 
-export const auth = app.auth()
-export default app
+const firebaseConfig = {
+  apiKey: "AIzaSyB2jGvV7Nd_to7Vq269rVLHuscRybZEijo",
+  authDomain: "motivation-development.firebaseapp.com",
+  projectId: "motivation-development",
+  storageBucket: "motivation-development.appspot.com",
+  messagingSenderId: "130720436442",
+  appId: "1:130720436442:web:35a34243d2a19424b1d5e3"
+}
+
+ const app = initializeApp(firebaseConfig);
+ export const auth = getAuth(app);
+
+ export const signInWithGoogle = ()  => {
+ const provider = new GoogleAuthProvider()
+  signInWithPopup(auth, provider)
+  .then((res)=>{
+   console.log(res)
+  }).catch((err)=>{
+   console.log(err)
+  });
+ };
