@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "b9d1a932fe708db96da4",
-    "url": "/Motivation/static/css/main.a9a2ed55.chunk.css"
+    "revision": "7d730e952cceadc98087",
+    "url": "/Motivation/static/css/main.b1b9e304.chunk.css"
   },
   {
-    "revision": "b9d1a932fe708db96da4",
-    "url": "/Motivation/static/js/main.b9d1a932.chunk.js"
+    "revision": "7d730e952cceadc98087",
+    "url": "/Motivation/static/js/main.7d730e95.chunk.js"
   },
   {
     "revision": "50b44236f1ddee971874",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/Motivation/static/js/runtime~main.1357d572.js"
   },
   {
-    "revision": "44a4eab56fba16df1685f17e8dcf3ff5",
+    "revision": "50309c19da0a0963510d9c88577371ad",
     "url": "/Motivation/index.html"
   }
 ];
