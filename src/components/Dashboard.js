@@ -41,6 +41,8 @@ const Dashboard = () => {
   
       <p className="other">You can check out my other blog posts <a href="https://poriamedia.com/" style={{textDecoration:"none", color:"black", fontWeight:"700"}}> here. </a></p>
 
+      <p>Thank You. 💖</p>
+
       </div>
     
     </div>
